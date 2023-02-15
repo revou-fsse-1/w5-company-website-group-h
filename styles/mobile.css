@@ -98,13 +98,19 @@ header input,
   display: none;
 }
 
+header .mobile-menu img {
+  padding: 1rem;
+  border-radius: 100px;
+  background-color: var(--color-white);
+}
+
 /* 
   -----------------------------------------------------------------------------
     BANNER
   -----------------------------------------------------------------------------
 */
 .banner {
-  padding: 5rem var(--global-leftright-padding);
+  padding: 6rem var(--global-leftright-padding);
   padding-bottom: 2rem;
   display: flex;
   flex-direction: column;
@@ -134,6 +140,7 @@ header input,
   position: absolute;
   transform: translate(-3.5rem, -5.2rem);
   background-color: var(--color-very-dark-blue);
+  box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.55);
   z-index: -3;
 }
 
@@ -150,7 +157,7 @@ header input,
   position: absolute;
   transform: translate(0.3rem, -5rem);
   background-color: var(--color-very-dark-blue);
-  box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.25);
+  box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.55);
   z-index: -2;
 }
 
@@ -172,7 +179,7 @@ header input,
   position: relative;
   border-radius: 100px;
   border-color: transparent;
-  box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.25);
+  box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.55);
   z-index: -1;
 }
 
@@ -411,4 +418,58 @@ footer .footer-social-media {
 
 footer .footer-social-media img {
   width: 38px;
+}
+
+footer .footer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+}
+
+footer .footer-delivery-support {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+footer .footer-delivery-support ul {
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer .footer-delivery-support img {
+  padding: 0.2rem;
+  width: 45px;
+  height: 45px;
+  border-radius: 100px;
+  background-color: var(--color-white);
+}
+
+footer .footer-payment-methods {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+footer .footer-payment-methods ul {
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer .footer-payment-methods img {
+  padding: 0.3rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  background-color: var(--color-white);
 }
