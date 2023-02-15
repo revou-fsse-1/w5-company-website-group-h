@@ -18,7 +18,6 @@
   --color-very-light-blue: #c7d9f5;
   --color-blue: #1a5bb7;
   --color-very-dark-blue: #19222e;
-  --color-turquoise: #3ad3f5;
 
   --round-button-size: 120px;
 }
@@ -75,6 +74,10 @@ button {
   width: fit-content;
 }
 
+img {
+  object-fit: contain;
+}
+
 /* 
   -----------------------------------------------------------------------------
     HEADER
@@ -119,6 +122,7 @@ header input,
   flex-direction: column;
   position: relative;
   z-index: 1;
+  color: var(--color-white);
 }
 
 .banner main h1::before {
@@ -128,8 +132,8 @@ header input,
   height: 310px;
   border-radius: 200px;
   position: absolute;
-  transform: translate(-4.2rem, -5.2rem);
-  background-color: var(--color-turquoise);
+  transform: translate(-3.5rem, -5.2rem);
+  background-color: var(--color-very-dark-blue);
   z-index: -3;
 }
 
@@ -145,7 +149,7 @@ header input,
   border-radius: 200px;
   position: absolute;
   transform: translate(0.3rem, -5rem);
-  background-color: var(--color-turquoise);
+  background-color: var(--color-very-dark-blue);
   box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.25);
   z-index: -2;
 }
@@ -319,6 +323,34 @@ header input,
 .newsletter form > div {
   display: flex;
   flex-direction: column;
+  gap: 8px;
+}
+
+.newsletter form > div > label {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-body);
+}
+
+.newsletter form > div > input {
+  padding: 0.7rem 0.5rem;
+  font-size: var(--font-size-body);
+  font-family: "Quicksand", "Segoe UI", sans-serif;
+}
+
+.newsletter .form-gender p {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-body);
+}
+
+.newsletter .form-gender > section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.newsletter .form-gender > section input {
+  width: 22px;
+  height: 22px;
 }
 
 .newsletter .form-button {
@@ -349,8 +381,34 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
+  gap: 15px;
   border-radius: 45px 45px 0px 0px;
   background: var(--color-very-dark-blue);
   color: var(--color-white);
+}
+
+footer .footer-menu {
+  padding-left: 0;
+  display: flex;
+  gap: 30px;
+}
+
+footer .footer-menu img {
+  width: 30px;
+}
+
+footer .footer-menu li {
+  padding: 0.7rem;
+  border-radius: 100px;
+  background-color: var(--color-white);
+}
+
+footer .footer-social-media {
+  padding-left: 0;
+  display: flex;
+  gap: 17px;
+}
+
+footer .footer-social-media img {
+  width: 38px;
 }
