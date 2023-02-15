@@ -216,18 +216,25 @@ header .mobile-menu img {
   gap: 15px;
 }
 
+.featured > div > article > img {
+  width: clamp(90px, 25%, 180px);
+  border-radius: 100px;
+  object-fit: cover;
+}
+
 .featured .item-info {
   display: grid;
   grid-template-areas:
     "name image"
     "price image";
   grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  gap: 7px;
+  grid-template-columns: 3fr 1fr;
+  gap: 2px 7px;
 }
 
 .featured .item-info h3 {
   grid-area: name;
+  align-self: flex-end;
 }
 
 .featured .item-info p {
@@ -237,6 +244,19 @@ header .mobile-menu img {
 
 .featured .item-info a {
   grid-area: image;
+  align-self: center;
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 100px;
+  background-color: var(--color-very-dark-blue);
+}
+
+.featured .item-info a img {
+  width: 25px;
 }
 
 .featured > a button {
@@ -277,12 +297,22 @@ header .mobile-menu img {
   width: 90%;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 55px;
 }
 
 .benefits > div > article {
   display: flex;
-  gap: 15px;
+  gap: 25px;
+}
+
+.benefits > div > article > img {
+  width: clamp(70px, 25%, 170px);
+}
+
+.benefits .benefits-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .benefits > a button {
@@ -451,7 +481,6 @@ footer .footer-delivery-support img {
 }
 
 footer .footer-payment-methods {
-  width: 80%;
   display: flex;
   flex-direction: column;
   gap: 20px;
