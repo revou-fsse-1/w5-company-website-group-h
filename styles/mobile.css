@@ -101,10 +101,55 @@ header input,
   display: none;
 }
 
-header .mobile-menu img {
+.header .mobile-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+header .mobile-menu > img {
+  cursor: pointer;
   padding: 1rem;
   border-radius: 100px;
   background-color: var(--color-white);
+  transition: all 0.15s ease-out;
+}
+
+header .mobile-menu > img:hover {
+  transform: scale(1.1, 1.1);
+}
+
+header .mobile-menu-content {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  position: absolute;
+  transition: all 0.5s ease-out;
+}
+
+.hide {
+  display: none;
+}
+
+header .mobile-menu-content a {
+  padding: 0.6rem;
+  width: 75px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  background-color: var(--color-white);
+  transition: all 0.15s ease-out;
+}
+
+header .mobile-menu-content a:hover {
+  transform: scale(1.2, 1.2);
+}
+
+header .mobile-menu-content img {
+  width: 43px;
 }
 
 /* 
@@ -185,6 +230,14 @@ header .mobile-menu img {
   border-color: transparent;
   box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.55);
   z-index: -1;
+  transition: all 0.25s ease-out;
+}
+
+.banner main a:hover button {
+  width: calc(var(--round-button-size) + 20px);
+  height: calc(var(--round-button-size) + 20px);
+  color: var(--color-white);
+  background-color: var(--color-very-dark-blue);
 }
 
 /* 
@@ -257,6 +310,12 @@ header .mobile-menu img {
   height: 70px;
   border-radius: 100px;
   background-color: var(--color-very-dark-blue);
+  transition: all 0.15s ease-out;
+}
+
+.featured .item-info a:hover {
+  transform: scale(1.2, 1.2);
+  background-color: var(--color-blue);
 }
 
 .featured .item-info a img {
@@ -273,6 +332,13 @@ header .mobile-menu img {
   cursor: pointer;
   background-color: var(--color-very-dark-blue);
   color: var(--color-white);
+  transition: all 0.25s ease-out;
+}
+
+.featured > a button:hover {
+  width: calc(var(--round-button-size) + 30px);
+  height: calc(var(--round-button-size) + 30px);
+  background-color: var(--color-blue);
 }
 
 /* 
@@ -329,6 +395,13 @@ header .mobile-menu img {
   cursor: pointer;
   background-color: var(--color-very-dark-blue);
   color: var(--color-white);
+  transition: all 0.25s ease-out;
+}
+
+.benefits > a button:hover {
+  width: calc(var(--round-button-size) + 30px);
+  height: calc(var(--round-button-size) + 30px);
+  background-color: var(--color-blue);
 }
 
 /* 
@@ -410,6 +483,14 @@ header .mobile-menu img {
   cursor: pointer;
   background-color: var(--color-very-dark-blue);
   color: var(--color-white);
+  transition: all 0.25s ease-out;
+}
+
+.newsletter .form-button button:hover {
+  width: calc(var(--round-button-size) + 130px);
+  height: calc(var(--round-button-size) + 30px);
+  color: var(--color-very-dark-blue);
+  background-color: var(--color-very-light-blue);
 }
 
 /* 
@@ -444,6 +525,11 @@ footer .footer-menu li {
   padding: 0.7rem;
   border-radius: 100px;
   background-color: var(--color-white);
+  transition: all 0.15s ease-out;
+}
+
+footer .footer-menu li:hover {
+  transform: scale(1.2, 1.2);
 }
 
 footer .footer-social-media {
