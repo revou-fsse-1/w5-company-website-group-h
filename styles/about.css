@@ -1,6 +1,6 @@
 /* 
   -----------------------------------------------------------------------------
-    about - delete this later
+    ABOUT
   -----------------------------------------------------------------------------
 */
 .about {
@@ -10,7 +10,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
+  gap: 50px;
   border-radius: 45px 45px 0px 0px;
   background: linear-gradient(
     180deg,
@@ -21,33 +21,30 @@
 }
 
 .about > div {
-  width: 90%;
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
-.about > div > article {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+.about > div img {
+  width: clamp(140px, 40vw, 230px);
+  border-radius: 300px;
 }
 
-.about > a button {
-  width: var(--round-button-size);
-  height: var(--round-button-size);
-  position: relative;
-  border-radius: var(--round-button-size);
-  border-color: transparent;
-  box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.25);
-  cursor: pointer;
-  background-color: var(--color-very-dark-blue);
-  color: var(--color-white);
+.about .about-info {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  text-align: center;
 }
+
 /* 
------------------------------------------------------------------------------
-contact
------------------------------------------------------------------------------
+  -----------------------------------------------------------------------------
+    CONTACT
+  -----------------------------------------------------------------------------
 */
 .contact {
   padding: 4rem var(--global-leftright-padding);
@@ -66,20 +63,22 @@ contact
   );
 }
 
-.contact > div {
-  width: 90%;
+.contact .contact-details {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 55px;
+  align-items: center;
+  gap: 30px;
 }
 
-.contact > div > article {
-  display: flex;
-  gap: 25px;
+.contact .contact-details iframe {
+  height: clamp(100px, 60vw, 450px);
+  width: clamp(100px, 80%, 700px);
 }
 
 .contact .contact-info {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  gap: 30px;
+  text-align: center;
 }
