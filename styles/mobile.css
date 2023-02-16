@@ -154,11 +154,11 @@ header .mobile-menu img {
 .banner main p::before {
   content: "";
   display: block;
-  width: 240px;
-  height: 240px;
+  width: 250px;
+  height: 250px;
   border-radius: 200px;
   position: absolute;
-  transform: translate(0.3rem, -5rem);
+  transform: translate(-1.5rem, -5rem);
   background-color: var(--color-very-dark-blue);
   box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.55);
   z-index: -2;
@@ -166,12 +166,13 @@ header .mobile-menu img {
 
 .banner main p {
   margin-top: 2.5rem;
-  width: 210px;
+  width: 190px;
   align-self: flex-end;
   text-align: right;
 }
 
 .banner main a {
+  margin-top: 1rem;
   margin-left: 20%;
   width: fit-content;
 }
