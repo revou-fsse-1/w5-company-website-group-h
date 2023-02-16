@@ -1,6 +1,8 @@
 # w5-company-website-group-h
 
-# ROND
+# RONDO
+
+RONDO is a retail company that specializes in Luggages, Bags, and Travel Accesories. Started its Journey since 2023. RONDO sells well-known brands like Lojel, Thule, Bagasi, Case Logic, and Travel Blue. Available at 15 Showrooms, and 50 Department Stores spreading accross Jakarta, Surabaya, and Bali
 
 The website is inspired by [Bags City](https://shop.bagscity.co.id/en/) company website.
 
@@ -12,7 +14,7 @@ The website is inspired by [Bags City](https://shop.bagscity.co.id/en/) company 
 
 - Home
 - About
-- Products
+- Store
 
 ## Design
 
