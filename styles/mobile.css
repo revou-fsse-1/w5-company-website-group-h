@@ -9,6 +9,8 @@
   --global-leftright-padding: 4%;
 
   --font-size-xl: 2.4rem;
+  --font-size-l: 1.8rem;
+  --font-size-m: 1.3rem;
   --font-size-body: 1.2rem;
 
   --font-weight-medium: 400;
@@ -51,6 +53,7 @@ h2 {
 
 h3 {
   font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-m);
 }
 
 p {
@@ -70,7 +73,7 @@ a {
 button {
   font-family: "Raleway", "Segoe UI", sans-serif;
   font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-body);
+  font-size: var(--font-size-m);
   width: fit-content;
 }
 
@@ -177,7 +180,7 @@ header .mobile-menu img {
   width: var(--round-button-size);
   height: var(--round-button-size);
   position: relative;
-  border-radius: 100px;
+  border-radius: 500px;
   border-color: transparent;
   box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.55);
   z-index: -1;
@@ -189,7 +192,7 @@ header .mobile-menu img {
   -----------------------------------------------------------------------------
 */
 .featured {
-  padding: 2rem var(--global-leftright-padding);
+  padding: 3rem var(--global-leftright-padding);
   padding-bottom: 5rem;
   margin-top: -3rem;
   display: flex;
@@ -277,7 +280,7 @@ header .mobile-menu img {
   -----------------------------------------------------------------------------
 */
 .benefits {
-  padding: 2rem var(--global-leftright-padding);
+  padding: 3rem var(--global-leftright-padding);
   padding-bottom: 5rem;
   margin-top: -3rem;
   display: flex;
@@ -306,7 +309,7 @@ header .mobile-menu img {
 }
 
 .benefits > div > article > img {
-  width: clamp(70px, 25%, 170px);
+  width: clamp(70px, 25%, 120px);
 }
 
 .benefits .benefits-info {
@@ -333,7 +336,7 @@ header .mobile-menu img {
   -----------------------------------------------------------------------------
 */
 .newsletter {
-  padding: 2rem var(--global-leftright-padding);
+  padding: 3rem var(--global-leftright-padding);
   padding-bottom: 5rem;
   margin-top: -3rem;
   display: flex;
@@ -369,9 +372,11 @@ header .mobile-menu img {
 }
 
 .newsletter form > div > input {
-  padding: 0.7rem 0.5rem;
+  padding: 0.7rem 1.3rem;
   font-size: var(--font-size-body);
   font-family: "Quicksand", "Segoe UI", sans-serif;
+  border-radius: 50px;
+  border-color: transparent;
 }
 
 .newsletter .form-gender p {
@@ -413,7 +418,7 @@ header .mobile-menu img {
 */
 footer {
   padding: 2rem var(--global-leftright-padding);
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
   margin-top: -3rem;
   display: flex;
   flex-direction: column;

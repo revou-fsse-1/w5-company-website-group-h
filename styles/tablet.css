@@ -3,6 +3,8 @@
     --global-leftright-padding: 8%;
 
     --font-size-xl: 3.3rem;
+    --font-size-l: 2rem;
+    --font-size-m: 1.6rem;
     --font-size-body: 1.3rem;
 
     --round-button-size: 170px;
@@ -125,5 +127,137 @@
     border-radius: 500px;
     box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.55);
     transform: translate(14rem, 15rem);
+  }
+
+  /* 
+  -----------------------------------------------------------------------------
+    FEATURED
+  -----------------------------------------------------------------------------
+  */
+  .featured > div {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .featured > div > article {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .featured > div > article > img {
+    width: clamp(180px, 80%, 280px);
+    border-radius: 300px;
+  }
+
+  .featured .item-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .featured .item-info a {
+    margin-top: 1.5rem;
+  }
+
+  /* 
+  -----------------------------------------------------------------------------
+    BENEFITS
+  -----------------------------------------------------------------------------
+  */
+  .benefits {
+    gap: 80px;
+  }
+
+  .benefits > div {
+    flex-direction: row;
+  }
+
+  .benefits > div > article {
+    width: 30%;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .benefits > div > article:nth-child(2) {
+    margin-top: 8rem;
+  }
+
+  .benefits > div > article > img {
+    width: clamp(90px, 50%, 140px);
+  }
+
+  .benefits .benefits-info {
+    text-align: center;
+  }
+
+  /* 
+  -----------------------------------------------------------------------------
+    NEWSLETTER
+  -----------------------------------------------------------------------------
+  */
+  .newsletter form > div > input {
+    padding: 0.9rem 1.3rem;
+  }
+
+  /* 
+  -----------------------------------------------------------------------------
+    FOOTER
+  -----------------------------------------------------------------------------
+  */
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  footer > img,
+  footer .footer-menu {
+    order: 1;
+  }
+
+  footer .footer-social-media {
+    order: 2;
+  }
+
+  footer .footer-info {
+    order: 3;
+  }
+
+  footer .footer-social-media {
+    flex-wrap: wrap;
+  }
+
+  footer .footer-info {
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+  }
+
+  footer .footer-delivery-support {
+    gap: 10px;
+  }
+
+  footer .footer-delivery-support ul {
+    justify-content: flex-end;
+    gap: 5px;
+  }
+
+  footer .footer-delivery-support img {
+    width: 37px;
+    height: 37px;
+  }
+
+  footer .footer-payment-methods {
+    gap: 10px;
+  }
+
+  footer .footer-payment-methods ul {
+    justify-content: flex-end;
+    gap: 5px;
+  }
+
+  footer .footer-payment-methods img {
+    width: 37px;
+    height: 37px;
   }
 }
