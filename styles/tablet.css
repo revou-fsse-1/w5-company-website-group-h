@@ -52,6 +52,11 @@
     justify-content: center;
     border-radius: 100px;
     background-color: var(--color-white);
+    transition: all 0.15s ease-out;
+  }
+
+  .header-menu ul li:hover {
+    transform: scale(1.2, 1.2);
   }
 
   .header-menu ul li a {

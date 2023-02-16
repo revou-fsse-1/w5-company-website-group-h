@@ -31,7 +31,7 @@
             /></a>
           </li>
           <li>
-            <a href="#"
+            <a href="" onclick="displayAlert()"
               ><img src="/assets/navigation/icon-store.png" alt="link to store"
             /></a>
           </li>
@@ -43,7 +43,7 @@
             /></a>
           </li>
           <li>
-            <a href="#"
+            <a href="#" onclick="displayAlert()"
               ><img
                 src="/assets/navigation/icon-account.png"
                 alt="link to account"
@@ -53,7 +53,12 @@
       </nav>
 
       <nav class="mobile-menu">
-        <img src="/assets/hamburger-menu.png" alt="mobile hamburger icon" />
+        <img src="/assets/hamburger-menu.png" alt="mobile hamburger icon" onclick="toggleMenu()" />
+        <div class="hide" id="mobile-dropdown">
+          <a href="/index.html"><img src="/assets/navigation/icon-home.png" alt="link to home" /></a>
+          <a href="/about/about.html"><img src="/assets/navigation/icon-about.png" alt="link to about us" /></a>
+          <a href="" onclick="displayAlert()"><img src="/assets/navigation/icon-store.png" alt="link to store" /></a>
+        </div>
       </nav>
     </header>
 
@@ -63,7 +68,7 @@
         <p>
           Our progress to deliver your needs with the best possible experience
         </p>
-        <a href="#"><button>Read More</button></a>
+        <a href="#about"><button>Read More</button></a>
       </main>
 
       <div class="banner-image">
@@ -82,7 +87,7 @@
       </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
       <h2>About Us</h2>
 
       <div>
@@ -137,7 +142,7 @@
           /></a>
         </li>
         <li>
-          <a href="#"
+          <a href="" onclick="displayAlert()"
             ><img src="/assets/navigation/icon-store.png" alt="link to store"
           /></a>
         </li>
@@ -206,5 +211,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="/app.js"></script>
   </body>
 </html>
