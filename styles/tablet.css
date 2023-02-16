@@ -260,4 +260,8 @@
     width: 37px;
     height: 37px;
   }
+
+  footer .copyright {
+    transform: translate(0, 7rem);
+  }
 }

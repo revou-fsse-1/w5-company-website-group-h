@@ -507,3 +507,12 @@ footer .footer-payment-methods img {
   border-radius: 100px;
   background-color: var(--color-white);
 }
+
+footer .copyright {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  text-align: center;
+  transform: translate(0, 25rem);
+  color: grey;
+}
