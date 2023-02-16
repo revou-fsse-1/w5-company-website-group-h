@@ -4,8 +4,8 @@
   -----------------------------------------------------------------------------
 */
 .about {
-  padding: 2rem var(--global-leftright-padding);
-  padding-bottom: 5rem;
+  padding: 4rem var(--global-leftright-padding);
+  padding-bottom: 9rem;
   margin-top: -3rem;
   display: flex;
   flex-direction: column;
@@ -50,8 +50,8 @@ contact
 -----------------------------------------------------------------------------
 */
 .contact {
-  padding: 2rem var(--global-leftright-padding);
-  padding-bottom: 5rem;
+  padding: 4rem var(--global-leftright-padding);
+  padding-bottom: 9rem;
   margin-top: -3rem;
   display: flex;
   flex-direction: column;

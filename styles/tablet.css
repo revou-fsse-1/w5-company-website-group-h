@@ -80,10 +80,10 @@
   }
 
   .banner main h1::before {
-    width: 390px;
-    height: 390px;
+    width: 430px;
+    height: 430px;
     border-radius: 300px;
-    transform: translate(-3.9rem, -6.2rem);
+    transform: translate(-3.9rem, -8.2rem);
   }
 
   .banner main h1 {
@@ -91,10 +91,10 @@
   }
 
   .banner main p::before {
-    width: 270px;
-    height: 270px;
+    width: 290px;
+    height: 290px;
     border-radius: 300px;
-    transform: translate(-0.8rem, -5.3rem);
+    transform: translate(-2.8rem, -5.3rem);
   }
 
   .banner main p {
