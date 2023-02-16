@@ -21,11 +21,11 @@
   }
 
   header input {
-    padding: 0.5rem 1rem;
+    padding: 0.6rem 1rem;
     width: 40%;
     align-self: center;
     font-family: "Quicksand", "Segoe UI", sans-serif;
-    border-radius: 5px;
+    border-radius: 100px;
     border-color: transparent;
   }
 
