@@ -4,6 +4,10 @@
 
 The website is inspired by [Bags City](https://shop.bagscity.co.id/en/) company website.
 
+# Links
+
+- [Link Netlify](https://rondobags.netlify.app/)
+
 ## Pages
 
 - Home
