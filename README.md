@@ -40,3 +40,8 @@ Netlify's Domain: [rondobags.netlify.app](https://rondobags.netlify.app/)
 | Blue | #1a5bb7 |
 | Very Light Blue | #c7d9f5 |
 | White | #f4f4f2 |
+
+### Fonts Used
+
+- [Raleway](https://fonts.google.com/specimen/Raleway)
+- [Quicksand](https://fonts.google.com/specimen/Quicksand)
