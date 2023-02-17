@@ -164,6 +164,16 @@ header .mobile-menu-content img {
   flex-direction: column;
   align-items: center;
   background-color: var(--color-blue);
+  animation: background-loop 3s linear 0s infinite alternate;
+}
+
+@keyframes background-loop {
+  0% {
+    background-color: var(--color-blue);
+  }
+  100% {
+    background-color: #113A74;
+  }
 }
 
 .banner-image {
