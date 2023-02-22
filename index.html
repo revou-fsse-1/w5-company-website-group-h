@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Providing your carrying needs with great variety of bags and luggage from well-known brands"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon-32.png"
+    />
+
+    <link rel="stylesheet" href="/styles/mobile.css" />
+    <link rel="stylesheet" href="/styles/tablet.css" />
+    <link rel="stylesheet" href="/styles/desktop.css" />
+
+    <title>RONDO | Carrying your Adventure with Style</title>
+  </head>
+
+  <body>
+    <header>
+      <img class="logo" src="/assets/logo.png" alt="rondo logo" />
+      <input class="search-bar" type="text" name="search" id="search" placeholder="Search..." />
+      <nav class="header-menu">
+        <ul>
+          <li>
+            <a href="/index.html"><img src="/assets/navigation/icon-home.png" alt="link to home" /></a>
+          </li>
+          <li>
+            <a href="" onclick="displayAlert()"><img src="/assets/navigation/icon-store.png" alt="link to store" /></a>
+          </li>
+          <li>
+            <a href="/about/about.html"><img src="/assets/navigation/icon-about.png" alt="link to about us" /></a>
+          </li>
+          <li>
+            <a href="" onclick="displayAlert()"><img src="/assets/navigation/icon-account.png" alt="link to account" /></a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="mobile-menu">
+        <img src="/assets/hamburger-menu.png" alt="mobile hamburger icon" onclick="toggleMenu()" />
+        <div class="hide" id="mobile-dropdown">
+          <a href="/index.html"><img src="/assets/navigation/icon-home.png" alt="link to home" /></a>
+          <a href="/about/about.html"><img src="/assets/navigation/icon-about.png" alt="link to about us" /></a>
+          <a href="" onclick="displayAlert()"><img src="/assets/navigation/icon-store.png" alt="link to store" /></a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="banner">
+      <main>
+        <h1>Carry your Adventure with Style</h1>
+        <p>Bring your stuff your way, and still look stylish on every occasion.</p>
+        <a href="#featured"><button>Explore</button></a>
+      </main>
+
+      <div class="banner-image">
+        <img src="/assets/illustration/illustration-main.png" alt="banner main image" />
+        <img src="/assets/illustration/illustration-secondary-1.png" alt="banner supportive image 1" />
+        <img src="/assets/illustration/illustration-secondary-2.png" alt="banner supportive image 2" />
+      </div>
+    </section>
+
+    <section class="featured" id="featured">
+      <h2>Top Choices</h2>
+
+      <div>
+        <article>
+          <img src="/assets/featured/featured-1.png" alt="item image 1" />
+
+          <article class="item-info">
+            <h3>Bertell Venture Backpack</h3>
+            <p>$ 179</p>
+            <a href="" onclick="displayAlert()"><img src="/assets/navigation/icon-link.png" alt="link to item" /></a>
+          </article>
+        </article>
+
+        <article>
+          <img src="/assets/featured/featured-2.png" alt="item image 2" />
+
+          <article class="item-info">
+            <h3>Athens Casual Backpack - Forest</h3>
+            <p>$ 125</p>
+            <a href="" onclick="displayAlert()"><img src="/assets/navigation/icon-link.png" alt="link to item" /></a>
+          </article>
+        </article>
+
+        <article>
+          <img src="/assets/featured/featured-3.png" alt="item image 3" />
+
+          <article class="item-info">
+            <h3>WOODS Trail Hike Backpack - Emerald</h3>
+            <p>$ 219</p>
+            <a href="" onclick="displayAlert()"><img src="/assets/navigation/icon-link.png" alt="link to item" /></a>
+          </article>
+        </article>
+      </div>
+
+      <a href="" onclick="displayAlert()"><button>See More</button></a>
+    </section>
+
+    <section class="benefits">
+      <h2>Priority Services for you</h2>
+
+      <div>
+        <article>
+          <img src="/assets/benefits/benefit-payment.png" alt="benefits payment" />
+
+          <article class="benefits-info">
+            <h3>Secure Payment</h3>
+            <p>Multiple safe payment method on trusted services only</p>
+          </article>
+        </article>
+
+        <article>
+          <img src="/assets/benefits/benefit-warranty.png" alt="benefits warranty" />
+
+          <article class="benefits-info">
+            <h3>Official Warranty</h3>
+            <p>Guaranteed against defect in materials and workmanship for 2 years</p>
+          </article>
+        </article>
+
+        <article>
+          <img src="/assets/benefits/benefit-quality.png" alt="benefits quality assurance" />
+
+          <article class="benefits-info">
+            <h3>Quality Assurance</h3>
+            <p>All our products are sourced from official stores with strict quality checks</p>
+          </article>
+        </article>
+      </div>
+
+      <a href="/about/about.html"><button>Read More</button></a>
+    </section>
+
+    <section class="newsletter">
+      <h2>Want more Exclusive Deals?</h2>
+      <p>Join our newsletter for special events & discounts on selected items</p>
+
+      <form action="#">
+        <div class="form-name">
+          <label for="username">Full Name</label>
+          <input
+            id="username"
+            type="text"
+            name="username"
+            placeholder="John Doe"
+            required
+          />
+        </div>
+
+        <div class="form-email">
+          <label for="email">E-mail</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="myemailname@gmail.com"
+            required
+          />
+        </div>
+
+        <div class="form-gender">
+          <p>Gender:</p>
+
+          <section>
+            <input id="gender-men" type="radio" name="gender" required />
+            <label for="gender-men">Men</label>
+
+            <input id="gender-women" type="radio" name="gender" required />
+            <label for="gender-women">Women</label>
+          </section>
+        </div>
+
+        <div class="form-button">
+          <button type="submit">Subscribe</button>
+        </div>
+      </form>
+    </section>
+
+    <footer>
+      <img class="logo" src="/assets/logo.png" alt="rondo logo" />
+
+      <ul class="footer-menu">
+        <li>
+          <a href="/index.html"><img src="/assets/navigation/icon-home.png" alt="link to home" /></a>
+        </li>
+        <li>
+          <a href="" onclick="displayAlert()"><img src="/assets/navigation/icon-store.png" alt="link to store" /></a>
+        </li>
+        <li>
+          <a href="/about/about.html"><img src="/assets/navigation/icon-about.png" alt="link to about us" /></a>
+        </li>
+      </ul>
+
+      <ul class="footer-social-media">
+        <li>
+          <img src="/assets/navigation/icon-facebook.png" alt="facebook" />
+        </li>
+        <li>
+          <img src="/assets/navigation/icon-twitter.png" alt="twitter" />
+        </li>
+        <li>
+          <img src="/assets/navigation/icon-instagram.png" alt="instagram" />
+        </li>
+        <li>
+          <img src="/assets/navigation/icon-pinterest.png" alt="pinterest" />
+        </li>
+      </ul>
+
+      <div class="footer-info">
+        <div class="footer-delivery-support">
+          <p>Delivery Support</p>
+          <ul>
+            <li>
+              <img src="/assets/delivery/icon-jne.png" alt="jne" />
+            </li>
+            <li>
+              <img src="/assets/delivery/icon-jnt.png" alt="j&t express" />
+            </li>
+            <li>
+              <img src="/assets/delivery/icon-sicepat.png" alt="sicepat" />
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-payment-methods">
+          <p>Payment Methods</p>
+          <ul>
+            <li>
+              <img src="/assets/payment/icon-visa.png" alt="visa" />
+            </li>
+            <li>
+              <img src="/assets/payment/icon-mastercard.png" alt="mastercard" />
+            </li>
+            <li>
+              <img src="/assets/payment/icon-bca.png" alt="bca" />
+            </li>
+            <li>
+              <img src="/assets/payment/icon-gopay.png" alt="gopay" />
+            </li>
+            <li>
+              <img src="/assets/payment/icon-mandiri.png" alt="mandiri" />
+            </li>
+            <li>
+              <img src="/assets/payment/icon-bni.png" alt="bni" />
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="copyright">&copy; RONDO 2023. All rights reserved.</p>
+    </footer>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
